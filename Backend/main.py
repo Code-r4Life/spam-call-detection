@@ -1,15 +1,6 @@
-import express from "express"
+def main():
+    print("Hello from backend!")
 
 
-const app = express()
-
-mongoose.connect(process.env.MONGO_URI)
-    .then(() => {
-        console.log("DB connected")
-    })
-    .catch((err) => {
-        console.log("DB not connected")
-    })
-
-// For extracting body
-app.use(express.json())
+if __name__ == "__main__":
+    main()
